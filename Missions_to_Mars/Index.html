@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title >Mission to Mars</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 >Mission to Mars</h1>      
+    <p><a class="btn btn-primary" href="/scrape" role="button">Scrape New Data</a></p>
+  </div>    
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3> <strong>Latest Mars News </strong></h3>
+        <h5>{{marsdb.first_news_title}}</h5>
+        <p>{{marsdb.news_paragraph}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 col-md-9 col-sm-12" >
+        <h3> <strong>Featured Mars Image </strong></h3>
+        <img src="{{marsdb.image_URL}}" >
+      </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-12">
+        <h4> <strong>Featured Facts </strong></h4>
+        <table> {{ marsdb.mars_facts_table }}</table>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class='row'>
+            <h3 style="text-align:center;"><strong>Mars Hemispheres</strong></h3>
+                <div class="row">
+                    </div>
+        </div>              
+    </div>
+

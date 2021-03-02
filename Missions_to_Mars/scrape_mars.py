@@ -77,11 +77,4 @@ def scrape():
 
     return mars_python  
 
-    print(mars_python)  
-
-
-
-
-
-
-
+print('end')  
